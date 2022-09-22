@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fun-with-mypy"
+version = "0.1.0"
+description = "Fun with Mypy"
+authors = ["Nicolas Gilles <nicolas.gilles@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "mypyfun"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.971"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
